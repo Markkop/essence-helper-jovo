@@ -1,4 +1,4 @@
-import { TestSuite, InputType } from '@jovotech/framework';
+import { TestSuite, InputType } from '@jovotech/framework'
 
 /*
 |--------------------------------------------------------------------------
@@ -10,12 +10,12 @@ import { TestSuite, InputType } from '@jovotech/framework';
 |
 */
 
-const testSuite = new TestSuite();
+const testSuite = new TestSuite()
 
 test('should ask the user if they like pizza', async () => {
   const { output } = await testSuite.run({
     type: InputType.Launch, // or 'LAUNCH'
-  });
+  })
 
   expect(output).toEqual([
     {
@@ -23,5 +23,5 @@ test('should ask the user if they like pizza', async () => {
       quickReplies: ['yes', 'no'],
       listen: true,
     },
-  ]);
-});
+  ])
+})

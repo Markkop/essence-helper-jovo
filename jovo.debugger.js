@@ -1,4 +1,4 @@
-const { DebuggerConfig } = require('@jovotech/plugin-debugger');
+const { DebuggerConfig } = require('@jovotech/plugin-debugger')
 
 const debuggerConfig = new DebuggerConfig({
   locales: ['en'],
@@ -23,6 +23,6 @@ const debuggerConfig = new DebuggerConfig({
     },
     // ...
   ],
-});
+})
 
-module.exports = debuggerConfig;
+module.exports = debuggerConfig

@@ -1,6 +1,6 @@
-const { GoogleAssistantCli } = require('@jovotech/platform-googleassistant');
-const { AlexaCli } = require('@jovotech/platform-alexa');
-const { ProjectConfig } = require('@jovotech/cli-core');
+const { GoogleAssistantCli } = require('@jovotech/platform-googleassistant')
+const { AlexaCli } = require('@jovotech/platform-alexa')
+const { ProjectConfig } = require('@jovotech/cli-core')
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +15,9 @@ const project = new ProjectConfig({
   endpoint: '${JOVO_WEBHOOK_URL}',
   plugins: [
     // Add Jovo CLI plugins here
-		new GoogleAssistantCli({ projectId: '<YOUR-PROJECT-ID>' }),
-		new AlexaCli({ locales: { en: [ 'en-AU', 'en-CA', 'en-IN', 'en-GB', 'en-US' ] } }),
+    new GoogleAssistantCli({ projectId: '<YOUR-PROJECT-ID>' }),
+    new AlexaCli({ locales: { en: ['en-AU', 'en-CA', 'en-IN', 'en-GB', 'en-US'] } }),
   ],
-});
+})
 
-module.exports = project;
+module.exports = project

@@ -1,6 +1,6 @@
-import { app } from './app';
-import { FileDb } from '@jovotech/db-filedb';
-import { JovoDebugger } from '@jovotech/plugin-debugger';
+import { app } from './app'
+import { FileDb } from '@jovotech/db-filedb'
+import { JovoDebugger } from '@jovotech/plugin-debugger'
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +18,6 @@ app.configure({
     }),
     new JovoDebugger(),
   ],
-});
+})
 
-export * from './server.express';
+export * from './server.express'

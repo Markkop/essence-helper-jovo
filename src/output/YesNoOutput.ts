@@ -1,4 +1,4 @@
-import { BaseOutput, Output, OutputTemplate } from '@jovotech/framework';
+import { BaseOutput, Output, OutputTemplate } from '@jovotech/framework'
 
 @Output()
 export class YesNoOutput extends BaseOutput {
@@ -15,6 +15,6 @@ export class YesNoOutput extends BaseOutput {
     return {
       quickReplies: ['yes', 'no'],
       listen: true,
-    };
+    }
   }
 }

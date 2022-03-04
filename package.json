@@ -1,8 +1,8 @@
 {
-  "name": "jovo-v4-template",
+  "name": "essence-helper-jovo",
   "private": true,
   "version": "4.0.0",
-  "description": "Get started with Jovo Framework v4 using this sample TypeScript app.",
+  "description": "A voice app for Alexa and Google that retrieves information about ZenithVR MMORPG",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -13,7 +13,7 @@
     "prebundle": "rimraf bundle",
     "postbundle": "cd bundle && bestzip ../bundle.zip * && cd ..",
     "bundle:dev": "npm run bundle -- src/app.dev.ts",
-    "eslint": "eslint src test --fix --ext .ts"
+    "eslint": "eslint src test --fix --ext .ts,.ts"
   },
   "dependencies": {
     "@jovotech/db-filedb": "^4.0.0",

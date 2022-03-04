@@ -1,9 +1,9 @@
-import { GoogleAssistantPlatform } from '@jovotech/platform-googleassistant';
-import { AlexaPlatform } from '@jovotech/platform-alexa';
-import { App } from '@jovotech/framework';
+import { GoogleAssistantPlatform } from '@jovotech/platform-googleassistant'
+import { AlexaPlatform } from '@jovotech/platform-alexa'
+import { App } from '@jovotech/framework'
 
-import { GlobalComponent } from './components/GlobalComponent';
-import { LoveHatePizzaComponent } from './components/LoveHatePizzaComponent';
+import { GlobalComponent } from './components/GlobalComponent'
+import { LoveHatePizzaComponent } from './components/LoveHatePizzaComponent'
 
 /*
 |--------------------------------------------------------------------------
@@ -37,10 +37,10 @@ const app = new App({
   */
   plugins: [
     // Add Jovo plugins here
-		new GoogleAssistantPlatform(),
-		new AlexaPlatform({
-		  intentMap: { 'AMAZON.StopIntent': 'END', 'AMAZON.CancelIntent': 'END' }
-		}),
+    new GoogleAssistantPlatform(),
+    new AlexaPlatform({
+      intentMap: { 'AMAZON.StopIntent': 'END', 'AMAZON.CancelIntent': 'END' },
+    }),
   ],
 
   /*
@@ -53,6 +53,6 @@ const app = new App({
   |
   */
   logging: true,
-});
+})
 
-export { app };
+export { app }
