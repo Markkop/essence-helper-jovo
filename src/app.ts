@@ -3,7 +3,9 @@ import { AlexaPlatform } from '@jovotech/platform-alexa'
 import { App } from '@jovotech/framework'
 
 import { GlobalComponent } from './components/GlobalComponent'
-import { LoveHatePizzaComponent } from './components/LoveHatePizzaComponent'
+import { en } from './utilities/strings'
+import { StartComponent } from './components/StartComponent'
+import { GetEquipmentPerkComponent } from './components/GetEquipmentPerkComponent'
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +26,7 @@ const app = new App({
   | Learn more here: www.jovo.tech/docs/components
   |
   */
-  components: [GlobalComponent, LoveHatePizzaComponent],
+  components: [GlobalComponent, StartComponent, GetEquipmentPerkComponent],
 
   /*
   |--------------------------------------------------------------------------
@@ -53,6 +55,17 @@ const app = new App({
   |
   */
   logging: true,
+
+  i18n: {
+    fallbackLng: 'en-US',
+    returnObjects: true,
+    interpolation: {
+      escapeValue: false,
+    },
+    resources: {
+      en,
+    },
+  },
 })
 
 export { app }

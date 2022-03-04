@@ -1,0 +1,384 @@
+[
+  {
+    "id": "banshee_s_bellow",
+    "name": "Banshee's Bellow",
+    "effect": "When struck cause [150% AP stagger] in a [5m AoE]. (15s CD)",
+    "type": "active"
+  },
+  {
+    "id": "blood_thief",
+    "name": "Blood Thief",
+    "effect": "On kill, restores HP by [100%] of AP.",
+    "type": "active"
+  },
+  {
+    "id": "body_meld",
+    "name": "Body Meld",
+    "effect": "On kill, grants [+100/130/130] Constitution for [30s] (Cooldown: [10s]) Stacks 3 times at kill 3 and kill 5 . (affects max HP and AP).",
+    "type": "active"
+  },
+  {
+    "id": "brain_freeze",
+    "name": "Brain Freeze",
+    "effect": "(possibly increases stagger)",
+    "type": "active"
+  },
+  {
+    "id": "breath_stealer",
+    "name": "Breath Stealer",
+    "effect": "",
+    "type": "active"
+  },
+  {
+    "id": "bunker",
+    "name": "Bunker",
+    "effect": "On being hit, [10%] chance to gain [30% armor] for [5s]. (Cooldown: [10s])",
+    "type": "active"
+  },
+  {
+    "id": "chrono_skip",
+    "name": "Chrono Skip",
+    "effect": "On being hit, [10%] chance to cause [30% slow attack speed] in a [5m AoE] for [5s]. (Cooldown: [10s])",
+    "type": "active"
+  },
+  {
+    "id": "death_s_chariot",
+    "name": "Death's Chariot",
+    "effect": "On kill, grants [+5%] movement speed for [30s]. (Cooldown: [10s]) Stacks to a maximum of +15%",
+    "type": "active"
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Deep Breathing",
+    "effect": "On ability use, increases AP by [2%] for [15s] (Cooldown: [5s]).",
+    "type": "active"
+  },
+  {
+    "id": "defiant",
+    "name": "Defiant",
+    "effect": "On ability use, restores HP by [35%] of AP. (Cooldown: [5s]). Does not require hitting an enemy with the ability.",
+    "type": "active"
+  },
+  {
+    "id": "essence_thief",
+    "name": "Essence Thief",
+    "effect": "On kill, restores [+?] Mana/Rage.",
+    "type": "active"
+  },
+  {
+    "id": "fighting_spirit",
+    "name": "Fighting Spirit",
+    "effect": "On fully charged weapon hit, heals self for 75HP",
+    "type": "active"
+  },
+  {
+    "id": "flare",
+    "name": "Flare",
+    "effect": "Attacks cause a [50% AP Damage] explosion in a [4m AoE]. (20s CD)",
+    "type": "active"
+  },
+  {
+    "id": "flow_state",
+    "name": "Flow State",
+    "effect": "On ability use, [10%] chance to gain [10%] rage/mana. (Cooldown: 5s)",
+    "type": "active"
+  },
+  {
+    "id": "godking_s_ascension",
+    "name": "Godking's Ascension",
+    "effect": "On kill, +[100] AP for [10s]. Kill causes a [300% AP Damage] explosion in a [4m AoE] (Cooldown:[10s]).",
+    "type": "active"
+  },
+  {
+    "id": "godking_s_passion",
+    "name": "Godking's Passion",
+    "effect": "On ability use, +[4%] AP for [30s].  (Cooldown:[6s]). Maximum 5 stack (+20% AP).",
+    "type": "active"
+  },
+  {
+    "id": "helping_hand",
+    "name": "Helping Hand",
+    "effect": "",
+    "type": "active"
+  },
+  {
+    "id": "inner_rage",
+    "name": "Inner Rage",
+    "effect": "On being hit, gain [3%] Crit chance for [15s]. Stacks 2 times. (Cooldown: 10s)",
+    "type": "active"
+  },
+  {
+    "id": "killer_s_edge",
+    "name": "Killer's Edge",
+    "effect": "On kill, grants [+10%] Crit Chance for [15s]. Also have observed this being applied to allies. Doesn't seem to stack.",
+    "type": "active"
+  },
+  {
+    "id": "kingmaker",
+    "name": "Kingmaker",
+    "effect": "When hitting an ally, grant them [15% AP] for [5s]. (Cooldown: [20s])",
+    "type": "active"
+  },
+  {
+    "id": "marrow_stealer",
+    "name": "Marrow Stealer",
+    "effect": "on kill, +[10%] AP for [5s]. No cooldown. Stacks if two or more gear triggers",
+    "type": "active"
+  },
+  {
+    "id": "mind_meld",
+    "name": "Mind Meld",
+    "effect": "On kill, grants [+100/130/130] Affinity for [30s] (Cooldown: [10s]) Stacks 3 times. (affects max Mana/Rage and AP).",
+    "type": "active"
+  },
+  {
+    "id": "pain_link",
+    "name": "Pain Link",
+    "effect": "On being hit, chance to cause [-50%] reduced movement speed and attack speed in enemies. Possibly an AoE effect.",
+    "type": "active"
+  },
+  {
+    "id": "pit_fighter",
+    "name": "Pit Fighter",
+    "effect": "On being hit, chance to gain [3%] Constitution for [15s]. Stacks 3 times. (Cooldown: 5s)",
+    "type": "active"
+  },
+  {
+    "id": "scatter",
+    "name": "Scatter",
+    "effect": "On being hit, [10%] chance to gain [15% movement speed] for [?s]. - incomplete guess.",
+    "type": "active"
+  },
+  {
+    "id": "shelter",
+    "name": "Shelter",
+    "effect": "",
+    "type": "active"
+  },
+  {
+    "id": "soul_shock",
+    "name": "Soul Shock",
+    "effect": "On hit, deal an additional [+25% AP] damage as a separate instance (Cooldown: [?s]). Procs shortly after the initial hit. Could instead be chance to deal damage, but without a cooldown.",
+    "type": "active"
+  },
+  {
+    "id": "spirit_meld",
+    "name": "Spirit Meld",
+    "effect": "On kill, grants [+100/130/130] Attack for [30s] (Cooldown: [10s]) Stacks 3 times. (affects Crit Chance and AP).",
+    "type": "active"
+  },
+  {
+    "id": "super_heated",
+    "name": "Super Heated",
+    "effect": "On hit, deals [100% AP] damage every [1s] for [5s]. Hit can be blaster or ability (even a non-damaging ability). I believe tiers 2 and 3 will increase the damage ticks beyond 5.",
+    "type": "active"
+  },
+  {
+    "id": "thick_as_thieves",
+    "name": "Thick As Thieves",
+    "effect": "When hitting an ally, grant them [+15%] movement speed for [30s]. Can be applied via splash damage. Buff is not applied to self. Will stack with other speed buffs.",
+    "type": "active"
+  },
+  {
+    "id": "well_rounded",
+    "name": "Well Rounded",
+    "effect": "increases Attack, Constitution, and Affinity by",
+    "tier1": "10",
+    "tier2": "??",
+    "tier3": "15",
+    "type": "passive"
+  },
+  {
+    "id": "warlock",
+    "name": "Warlock",
+    "effect": "increases Attack and Affinity by",
+    "tier1": "14",
+    "tier2": "??",
+    "tier3": "21",
+    "type": "passive"
+  },
+  {
+    "id": "brawler",
+    "name": "Brawler",
+    "effect": "increases Attack and Constitution by",
+    "tier1": "14",
+    "tier2": "??",
+    "tier3": "??",
+    "type": "passive"
+  },
+  {
+    "id": "exemplar",
+    "name": "Exemplar",
+    "effect": "increases Affinity and Constitution by",
+    "tier1": "14",
+    "tier2": "??",
+    "tier3": "??",
+    "type": "passive"
+  },
+  {
+    "id": "mighty",
+    "name": "Mighty",
+    "effect": "increases Attack by",
+    "tier1": "20",
+    "tier2": "30",
+    "tier3": "30",
+    "type": "passive"
+  },
+  {
+    "id": "brainiac",
+    "name": "Brainiac",
+    "effect": "increases Affinity by",
+    "tier1": "24",
+    "tier2": "36",
+    "tier3": "36",
+    "type": "passive"
+  },
+  {
+    "id": "vanguard",
+    "name": "Vanguard",
+    "effect": "increases Constitution by",
+    "tier1": "24",
+    "tier2": "36",
+    "tier3": "36",
+    "type": "passive"
+  },
+  {
+    "id": "eagle_eye",
+    "name": "Eagle Eye",
+    "effect": "increases Crit Chance by",
+    "tier1": "4%",
+    "tier2": "?%",
+    "tier3": "7%",
+    "type": "passive"
+  },
+  {
+    "id": "slayer",
+    "name": "Slayer",
+    "effect": "Increases Crit Power by",
+    "tier1": "",
+    "tier2": "",
+    "tier3": "",
+    "type": "passive"
+  },
+  {
+    "id": "sadistic",
+    "name": "Sadistic",
+    "effect": "Increases Crit Chance and Crit Power by",
+    "tier1": "",
+    "tier2": "",
+    "tier3": "",
+    "type": "passive"
+  },
+  {
+    "id": "sprinter",
+    "name": "Sprinter",
+    "effect": "increases Stamina by",
+    "tier1": "1",
+    "tier2": "",
+    "tier3": "",
+    "type": "passive"
+  },
+  {
+    "id": "oxygenator",
+    "name": "Oxygenator",
+    "effect": "Increases Stamina Regen",
+    "tier1": "",
+    "tier2": "",
+    "tier3": "",
+    "type": "passive"
+  },
+  {
+    "id": "lightfoot",
+    "name": "Lightfoot",
+    "effect": "Increases movement speed",
+    "tier1": "",
+    "tier2": "",
+    "tier3": "",
+    "type": "passive"
+  },
+  {
+    "id": "steadfast",
+    "name": "Steadfast",
+    "effect": "Increases Health by",
+    "tier1": "300",
+    "tier2": "450",
+    "tier3": "450",
+    "type": "passive"
+  },
+  {
+    "id": "automend",
+    "name": "Automend",
+    "effect": "Increases natural Health regeneration by",
+    "tier1": "+100%",
+    "tier2": "",
+    "tier3": "",
+    "type": "passive"
+  },
+  {
+    "id": "essence_flow",
+    "name": "Essence Flow",
+    "effect": "Increases resource regeneration (may not be working)",
+    "tier1": "",
+    "tier2": "",
+    "tier3": "",
+    "type": "passive"
+  },
+  {
+    "id": "shell",
+    "name": "Shell",
+    "effect": "Increases Armor (may not be working)",
+    "tier1": "100",
+    "tier2": "200",
+    "tier3": "300",
+    "type": "passive"
+  },
+  {
+    "id": "robust",
+    "name": "Robust",
+    "effect": "slightly increases Health by",
+    "tier1": "100",
+    "type": "passive"
+  },
+  {
+    "id": "assistant",
+    "name": "Assistant",
+    "effect": "slightly increases Affinity by",
+    "tier1": "10",
+    "type": "passive"
+  },
+  {
+    "id": "brutal",
+    "name": "Brutal",
+    "effect": "slightly increases Attack by",
+    "tier1": "10",
+    "type": "passive"
+  },
+  {
+    "id": "bastion",
+    "name": "Bastion",
+    "effect": "slightly increases Constitution by",
+    "tier1": "10",
+    "type": "passive"
+  },
+  {
+    "id": "ferocious",
+    "name": "Ferocious",
+    "effect": "Moderately increases Attack by",
+    "tier1": "20",
+    "type": "passive"
+  },
+  {
+    "id": "bolster",
+    "name": "Bolster",
+    "effect": "Moderately increases Affinity by",
+    "tier1": "24",
+    "type": "passive"
+  },
+  {
+    "id": "fortified",
+    "name": "Fortified",
+    "effect": "Moderately increases Constitution by",
+    "tier1": "20",
+    "type": "passive"
+  }
+]

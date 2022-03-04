@@ -1,43 +1,24 @@
-# Jovo v4 Template
+# 🥽 Essence Helper
 
-[![Jovo Framework](https://www.jovo.tech/img/github-header.png)](https://www.jovo.tech)
+[![https://img.shields.io/static/v1?label=made%20with&message=jovo&color=272f48&logo=data:https://www.jovo.tech/favicon.ico](https://img.shields.io/static/v1?label=made%20with&message=jovo&color=272f48)](https://www.jovo.tech)
+[![https://img.shields.io/static/v1?label=google%20assistant&message=compatible&logo=googleassistant&color=brightgreen](https://img.shields.io/static/v1?label=google%20assistant&message=compatible&logo=googleassistant&color=brightgreen)](https://www.jovo.tech)
+[![https://img.shields.io/static/v1?label=amazon%20alexa&message=compatible&logo=amazonalexa&color=brightgreen](https://img.shields.io/static/v1?label=amazon%20alexa&message=compatible&logo=amazonalexa&color=brightgreen)](https://www.jovo.tech)
 
-<p>
-<a href="https://www.jovo.tech" target="_blank">Website</a> -  <a href="https://www.jovo.tech/docs" target="_blank">Docs</a> - <a href="https://www.jovo.tech/marketplace" target="_blank">Marketplace</a> - <a href="https://github.com/jovotech/jovo-v4-template" target="_blank">Template</a>   
-</p>
+Essence Helper is a voice app compatible with Google Assistant and Amazon Alexa that retrieves information about ZenithVR MMORPG.
 
-A sample [Jovo `v4`](https://www.jovo.tech) app that makes it possible to build experiences for voice and chat platforms.
+This project is made using Jovo as an effort to avoid duplicate logic and code.
 
-This is the default template for the [`jovo new` command](https://www.jovo.tech/docs/new-command).
+## Get the skill
 
-## Getting Started
+- Soon
 
-> Learn more in Jovo docs: https://www.jovo.tech/docs/getting-started
+## How to develop
 
-You can install the new Jovo CLI like this:
+- Install [Jovo CLI](https://www.jovo.tech/docs/cli)
+- Run `npm install`
+- Run `jovo run`
+- Press `.` to open web interface
 
-```sh
-# Install globally
-$ npm install -g @jovotech/cli
+## How to deploy
 
-# Test the installation
-$ jovo -v
-```
-
-After successfully installing the Jovo CLI, you can install the template using the [`new` command](https://www.jovo.tech/docs/new-command):
-
-```sh
-$ jovo new <directory>
-```
-
-Change your working directory into your newly created project directory and [`run`](https://www.jovo.tech/docs/run-command) your Jovo app:
-
-```sh
-# Change working directory to your previously specified directory
-$ cd <directory>
-
-# Run local development server
-$ jovo run
-```
-
-You can now open the Jovo Debugger with the `.` key.
+- Soon

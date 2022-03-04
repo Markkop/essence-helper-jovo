@@ -1,5 +1,5 @@
 import { Component, BaseComponent, Global } from '@jovotech/framework'
-import { LoveHatePizzaComponent } from './LoveHatePizzaComponent'
+import { StartComponent } from './StartComponent'
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,6 @@ import { LoveHatePizzaComponent } from './LoveHatePizzaComponent'
 @Component()
 export class GlobalComponent extends BaseComponent {
   LAUNCH(): Promise<void> {
-    return this.$redirect(LoveHatePizzaComponent)
+    return this.$redirect(StartComponent)
   }
 }

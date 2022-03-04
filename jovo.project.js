@@ -15,7 +15,9 @@ const project = new ProjectConfig({
   endpoint: '${JOVO_WEBHOOK_URL}',
   plugins: [
     // Add Jovo CLI plugins here
-    new GoogleAssistantCli({ projectId: '<YOUR-PROJECT-ID>' }),
+    new GoogleAssistantCli({
+      projectId: 'essence-helper',
+    }),
     new AlexaCli({ locales: { en: ['en-AU', 'en-CA', 'en-IN', 'en-GB', 'en-US'] } }),
   ],
 })

@@ -1,18 +1,400 @@
 {
-  "invocation": "my test app",
+  "invocation": "essence helper",
   "version": "4.0",
   "intents": {
-    "YesIntent": {
+    "GetEquipmentPerkIntent": {
       "phrases": [
-        "yes",
-        "yes please",
-        "sure"
-      ]
-    },
-    "NoIntent": {
-      "phrases": [
-        "no",
-        "no thanks"
+        "equipment",
+        "equipment perk",
+        "equipment perks",
+        "perk",
+        "perks",
+        "effect",
+        "fact",
+        "effects",
+        "facts",
+        "the equipment perk {perk}",
+        "the effect of the equipment perk {perk}",
+        "the fact of the equipment perk {perk}",
+        "the effect of the perk {perk}",
+        "the fact of the perk {perk}",
+        "the effect of perk {perk}",
+        "the fact of perk {perk}",
+        "the effect of {perk}",
+        "the fact of {perk}",
+        "the effect of the {perk}",
+        "the fact of the {perk}",
+        "the effect of {perk} perk",
+        "the fact of {perk} perk",
+        "get the equipment perk {perk}",
+        "get me the equipment perk {perk}",
+        "get the effect of the equipment perk {perk}",
+        "get me the effect of the equipment perk {perk}",
+        "get the fact of the equipment perk {perk}",
+        "get me the fact of the equipment perk {perk}",
+        "get the effect of the perk {perk}",
+        "get me the effect of the perk {perk}",
+        "get the fact of the perk {perk}",
+        "get me the fact of the perk {perk}",
+        "get the effect of perk {perk}",
+        "get me the effect of perk {perk}",
+        "get the fact of perk {perk}",
+        "get me the fact of perk {perk}",
+        "get the effect of {perk}",
+        "get me the effect of {perk}",
+        "get the fact of {perk}",
+        "get me the fact of {perk}",
+        "get the effect of the {perk}",
+        "get me the effect of the {perk}",
+        "get the fact of the {perk}",
+        "get me the fact of the {perk}",
+        "get the effect of {perk} perk",
+        "get me the effect of {perk} perk",
+        "get the fact of {perk} perk",
+        "get me the fact of {perk} perk",
+        "give me the equipment perk {perk}",
+        "give the equipment perk {perk}",
+        "give me the effect of the equipment perk {perk}",
+        "give the effect of the equipment perk {perk}",
+        "give me the fact of the equipment perk {perk}",
+        "give the fact of the equipment perk {perk}",
+        "give me the effect of the perk {perk}",
+        "give the effect of the perk {perk}",
+        "give me the fact of the perk {perk}",
+        "give the fact of the perk {perk}",
+        "give me the effect of perk {perk}",
+        "give the effect of perk {perk}",
+        "give me the fact of perk {perk}",
+        "give the fact of perk {perk}",
+        "give me the effect of {perk}",
+        "give the effect of {perk}",
+        "give me the fact of {perk}",
+        "give the fact of {perk}",
+        "give me the effect of the {perk}",
+        "give the effect of the {perk}",
+        "give me the fact of the {perk}",
+        "give the fact of the {perk}",
+        "give me the effect of {perk} perk",
+        "give the effect of {perk} perk",
+        "give me the fact of {perk} perk",
+        "give the fact of {perk} perk",
+        "tell me the equipment perk {perk}",
+        "tell the equipment perk {perk}",
+        "tell me the effect of the equipment perk {perk}",
+        "tell the effect of the equipment perk {perk}",
+        "tell me the fact of the equipment perk {perk}",
+        "tell the fact of the equipment perk {perk}",
+        "tell me the effect of the perk {perk}",
+        "tell the effect of the perk {perk}",
+        "tell me the fact of the perk {perk}",
+        "tell the fact of the perk {perk}",
+        "tell me the effect of perk {perk}",
+        "tell the effect of perk {perk}",
+        "tell me the fact of perk {perk}",
+        "tell the fact of perk {perk}",
+        "tell me the effect of {perk}",
+        "tell the effect of {perk}",
+        "tell me the fact of {perk}",
+        "tell the fact of {perk}",
+        "tell me the effect of the {perk}",
+        "tell the effect of the {perk}",
+        "tell me the fact of the {perk}",
+        "tell the fact of the {perk}",
+        "tell me the effect of {perk} perk",
+        "tell the effect of {perk} perk",
+        "tell me the fact of {perk} perk",
+        "tell the fact of {perk} perk",
+        "provide me the equipment perk {perk}",
+        "provide the equipment perk {perk}",
+        "provide me the effect of the equipment perk {perk}",
+        "provide the effect of the equipment perk {perk}",
+        "provide me the fact of the equipment perk {perk}",
+        "provide the fact of the equipment perk {perk}",
+        "provide me the effect of the perk {perk}",
+        "provide the effect of the perk {perk}",
+        "provide me the fact of the perk {perk}",
+        "provide the fact of the perk {perk}",
+        "provide me the effect of perk {perk}",
+        "provide the effect of perk {perk}",
+        "provide me the fact of perk {perk}",
+        "provide the fact of perk {perk}",
+        "provide me the effect of {perk}",
+        "provide the effect of {perk}",
+        "provide me the fact of {perk}",
+        "provide the fact of {perk}",
+        "provide me the effect of the {perk}",
+        "provide the effect of the {perk}",
+        "provide me the fact of the {perk}",
+        "provide the fact of the {perk}",
+        "provide me the effect of {perk} perk",
+        "provide the effect of {perk} perk",
+        "provide me the fact of {perk} perk",
+        "provide the fact of {perk} perk"
+      ],
+      "entities": {
+        "perk": {
+          "type": "perk"
+        }
+      }
+    }
+  },
+  "entityTypes": {
+    "perk": {
+      "values": [
+        {
+          "value": "Banshee's Bellow",
+          "synonyms": [
+            "Banshee",
+            "Banshee Bellow",
+            "Bellow"
+          ]
+        },
+        {
+          "value": "Blood Thief",
+          "synonyms": [
+            "Blood"
+          ]
+        },
+        {
+          "value": "Body Meld",
+          "synonyms": [
+            "Body"
+          ]
+        },
+        {
+          "value": "Brain Freeze",
+          "synonyms": [
+            "Brain",
+            "Freeze"
+          ]
+        },
+        {
+          "value": "Breath Stealer",
+          "synonyms": [
+            "Breath"
+          ]
+        },
+        {
+          "value": "Bunker"
+        },
+        {
+          "value": "Chrono Skip",
+          "synonyms": [
+            "Chrono",
+            "Skip"
+          ]
+        },
+        {
+          "value": "Death's Chariot",
+          "synonyms": [
+            "Death",
+            "Death Chariot",
+            "Chariot"
+          ]
+        },
+        {
+          "value": "Deep Breathing",
+          "synonyms": [
+            "Deep",
+            "Breathing"
+          ]
+        },
+        {
+          "value": "Defiant"
+        },
+        {
+          "value": "Essence Thief"
+        },
+        {
+          "value": "Fighting Spirit",
+          "synonyms": [
+            "Fighting"
+          ]
+        },
+        {
+          "value": "Flare"
+        },
+        {
+          "value": "Flow State",
+          "synonyms": [
+            "State"
+          ]
+        },
+        {
+          "value": "Godking's Ascension",
+          "synonyms": [
+            "Godking Ascension",
+            "Ascension"
+          ]
+        },
+        {
+          "value": "Godking's Passion",
+          "synonyms": [
+            "Godking Passion",
+            "Passion"
+          ]
+        },
+        {
+          "value": "Helping Hand",
+          "synonyms": [
+            "Helping",
+            "Hand"
+          ]
+        },
+        {
+          "value": "Inner Rage",
+          "synonyms": [
+            "Inner",
+            "Rage"
+          ]
+        },
+        {
+          "value": "Killer's Edge",
+          "synonyms": [
+            "Killer",
+            "Killer Edge",
+            "Edge"
+          ]
+        },
+        {
+          "value": "Kingmaker"
+        },
+        {
+          "value": "Marrow Stealer",
+          "synonyms": [
+            "Marrow"
+          ]
+        },
+        {
+          "value": "Mind Meld",
+          "synonyms": [
+            "Mind"
+          ]
+        },
+        {
+          "value": "Pain Link",
+          "synonyms": [
+            "Pain",
+            "Link"
+          ]
+        },
+        {
+          "value": "Pit Fighter",
+          "synonyms": [
+            "Pit",
+            "Fighter"
+          ]
+        },
+        {
+          "value": "Scatter"
+        },
+        {
+          "value": "Shelter"
+        },
+        {
+          "value": "Soul Shock",
+          "synonyms": [
+            "Soul",
+            "Shock"
+          ]
+        },
+        {
+          "value": "Spirit Meld"
+        },
+        {
+          "value": "Super Heated",
+          "synonyms": [
+            "Super",
+            "Heated"
+          ]
+        },
+        {
+          "value": "Thick As Thieves",
+          "synonyms": [
+            "Thick",
+            "Thieves"
+          ]
+        },
+        {
+          "value": "Well Rounded",
+          "synonyms": [
+            "Well",
+            "Rounded"
+          ]
+        },
+        {
+          "value": "Warlock"
+        },
+        {
+          "value": "Brawler"
+        },
+        {
+          "value": "Exemplar"
+        },
+        {
+          "value": "Mighty"
+        },
+        {
+          "value": "Brainiac"
+        },
+        {
+          "value": "Vanguard"
+        },
+        {
+          "value": "Eagle Eye",
+          "synonyms": [
+            "Eagle",
+            "Eye"
+          ]
+        },
+        {
+          "value": "Slayer"
+        },
+        {
+          "value": "Sadistic"
+        },
+        {
+          "value": "Sprinter"
+        },
+        {
+          "value": "Oxygenator"
+        },
+        {
+          "value": "Lightfoot"
+        },
+        {
+          "value": "Steadfast"
+        },
+        {
+          "value": "Automend"
+        },
+        {
+          "value": "Essence Flow"
+        },
+        {
+          "value": "Shell"
+        },
+        {
+          "value": "Robust"
+        },
+        {
+          "value": "Assistant"
+        },
+        {
+          "value": "Brutal"
+        },
+        {
+          "value": "Bastion"
+        },
+        {
+          "value": "Ferocious"
+        },
+        {
+          "value": "Bolster"
+        },
+        {
+          "value": "Fortified"
+        }
       ]
     }
   },
