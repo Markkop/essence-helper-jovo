@@ -6,6 +6,7 @@ import { GlobalComponent } from './components/GlobalComponent'
 import { en } from './utilities/strings'
 import { StartComponent } from './components/StartComponent'
 import { GetEquipmentPerkComponent } from './components/GetEquipmentPerkComponent'
+import { GetDiscoverableLocationComponent } from './components/GetDiscoverableLocation'
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,7 @@ const app = new App({
   | Learn more here: www.jovo.tech/docs/components
   |
   */
-  components: [GlobalComponent, StartComponent, GetEquipmentPerkComponent],
+  components: [GlobalComponent, StartComponent, GetEquipmentPerkComponent, GetDiscoverableLocationComponent],
 
   /*
   |--------------------------------------------------------------------------

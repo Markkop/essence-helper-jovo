@@ -1,4 +1,5 @@
 import { Component, BaseComponent } from '@jovotech/framework'
+import { CardOutput } from '../output/CardOutput'
 import { getIndefiniteArticleForPerkType, getPerk } from '../utilities/perk'
 import { Strings } from '../utilities/strings'
 
@@ -8,7 +9,7 @@ export class GetEquipmentPerkComponent extends BaseComponent {
     const providedPerk = this.$entities.perk
     if (!providedPerk) {
       return this.$send({
-        message: 'Which equipment perk would you like to know about?',
+        message: this.$t(Strings.ASK_FOR_PERK),
         listen: true,
       })
     }
@@ -17,13 +18,19 @@ export class GetEquipmentPerkComponent extends BaseComponent {
     const perk = getPerk(providedPerkName)
     if (!perk) {
       const perkNotFoundSpeakOutput = this.$t(Strings.PERK_NOT_FOUND)
-      return this.$send(perkNotFoundSpeakOutput)
+      return this.$send(CardOutput, {
+        speakOutput: perkNotFoundSpeakOutput,
+        cardTitle: 'Not found',
+      })
     }
 
     const perkName = perk.name
     if (!perk.effect) {
       const unknownEffectSpeakOutput = this.$t(Strings.UNKNOWN_PERK_EFFECT)
-      return this.$send(unknownEffectSpeakOutput)
+      return this.$send(CardOutput, {
+        speakOutput: unknownEffectSpeakOutput,
+        cardTitle: perkName,
+      })
     }
 
     const indefiniteArticle = getIndefiniteArticleForPerkType(perk.type)
@@ -32,7 +39,10 @@ export class GetEquipmentPerkComponent extends BaseComponent {
     const accordingToSource = this.$t(Strings.ACCORDING_TO_SOURCE, { source: 'ZenithMMO Fandom Wiki' })
     const effectSpeakOutput = this.$t(Strings.PERK, { indefiniteArticle, perkName, perkType, perkEffect })
     const speakOutput = `${accordingToSource}, ${effectSpeakOutput}`
-    return this.$send(speakOutput)
+    return this.$send(CardOutput, {
+      speakOutput: speakOutput,
+      cardTitle: perkName,
+    })
   }
 
   UNHANDLED(): Promise<void> {

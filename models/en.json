@@ -136,6 +136,136 @@
           "type": "perk"
         }
       }
+    },
+    "GetDiscoverableLocationIntent": {
+      "phrases": [
+        "location",
+        "locations",
+        "cooking ingredient",
+        "cooking ingredients",
+        "item",
+        "items",
+        "ingredient",
+        "ingredients",
+        "cooking",
+        "source",
+        "sources",
+        "what is the location of {discoverable}",
+        "the location of the item {discoverable}",
+        "the location of item {discoverable}",
+        "the location of {discoverable}",
+        "the location of the {discoverable}",
+        "the location of {discoverable} item",
+        "get the item {discoverable}",
+        "get me the item {discoverable}",
+        "get the item {discoverable} location",
+        "get me the item {discoverable} location",
+        "get the {discoverable} location",
+        "get me the {discoverable} location",
+        "get where the {discoverable} is located",
+        "get me where the {discoverable} is located",
+        "get where {discoverable} is located",
+        "get me where {discoverable} is located",
+        "get where {discoverable} are located",
+        "get me where {discoverable} are located",
+        "get where I can find {discoverable}",
+        "get me where I can find {discoverable}",
+        "get {discoverable} location",
+        "get me {discoverable} location",
+        "get the location of the item {discoverable}",
+        "get me the location of the item {discoverable}",
+        "get the location of item {discoverable}",
+        "get me the location of item {discoverable}",
+        "get the location of {discoverable}",
+        "get me the location of {discoverable}",
+        "get the location of the {discoverable}",
+        "get me the location of the {discoverable}",
+        "get the location of {discoverable} item",
+        "get me the location of {discoverable} item",
+        "give me the item {discoverable}",
+        "give the item {discoverable}",
+        "give me the item {discoverable} location",
+        "give the item {discoverable} location",
+        "give me the {discoverable} location",
+        "give the {discoverable} location",
+        "give me where the {discoverable} is located",
+        "give where the {discoverable} is located",
+        "give me where {discoverable} is located",
+        "give where {discoverable} is located",
+        "give me where {discoverable} are located",
+        "give where {discoverable} are located",
+        "give me where I can find {discoverable}",
+        "give where I can find {discoverable}",
+        "give me {discoverable} location",
+        "give {discoverable} location",
+        "give me the location of the item {discoverable}",
+        "give the location of the item {discoverable}",
+        "give me the location of item {discoverable}",
+        "give the location of item {discoverable}",
+        "give me the location of {discoverable}",
+        "give the location of {discoverable}",
+        "give me the location of the {discoverable}",
+        "give the location of the {discoverable}",
+        "give me the location of {discoverable} item",
+        "give the location of {discoverable} item",
+        "tell me the item {discoverable}",
+        "tell the item {discoverable}",
+        "tell me the item {discoverable} location",
+        "tell the item {discoverable} location",
+        "tell me the {discoverable} location",
+        "tell the {discoverable} location",
+        "tell me where the {discoverable} is located",
+        "tell where the {discoverable} is located",
+        "tell me where {discoverable} is located",
+        "tell where {discoverable} is located",
+        "tell me where {discoverable} are located",
+        "tell where {discoverable} are located",
+        "tell me where I can find {discoverable}",
+        "tell where I can find {discoverable}",
+        "tell me {discoverable} location",
+        "tell {discoverable} location",
+        "tell me the location of the item {discoverable}",
+        "tell the location of the item {discoverable}",
+        "tell me the location of item {discoverable}",
+        "tell the location of item {discoverable}",
+        "tell me the location of {discoverable}",
+        "tell the location of {discoverable}",
+        "tell me the location of the {discoverable}",
+        "tell the location of the {discoverable}",
+        "tell me the location of {discoverable} item",
+        "tell the location of {discoverable} item",
+        "provide me the item {discoverable}",
+        "provide the item {discoverable}",
+        "provide me the item {discoverable} location",
+        "provide the item {discoverable} location",
+        "provide me the {discoverable} location",
+        "provide the {discoverable} location",
+        "provide me where the {discoverable} is located",
+        "provide where the {discoverable} is located",
+        "provide me where {discoverable} is located",
+        "provide where {discoverable} is located",
+        "provide me where {discoverable} are located",
+        "provide where {discoverable} are located",
+        "provide me where I can find {discoverable}",
+        "provide where I can find {discoverable}",
+        "provide me {discoverable} location",
+        "provide {discoverable} location",
+        "provide me the location of the item {discoverable}",
+        "provide the location of the item {discoverable}",
+        "provide me the location of item {discoverable}",
+        "provide the location of item {discoverable}",
+        "provide me the location of {discoverable}",
+        "provide the location of {discoverable}",
+        "provide me the location of the {discoverable}",
+        "provide the location of the {discoverable}",
+        "provide me the location of {discoverable} item",
+        "provide the location of {discoverable} item"
+      ],
+      "entities": {
+        "discoverable": {
+          "type": "discoverable"
+        }
+      }
     }
   },
   "entityTypes": {
@@ -396,6 +526,126 @@
           "value": "Fortified"
         }
       ]
+    },
+    "discoverable": {
+      "values": [
+        {
+          "value": "Apple",
+          "synonyms": [
+            "apples"
+          ]
+        },
+        {
+          "value": "Basic Noodles",
+          "synonyms": [
+            "basic noodle",
+            "noodle"
+          ]
+        },
+        {
+          "value": "Basil",
+          "synonyms": [
+            "basils"
+          ]
+        },
+        {
+          "value": "Blood Orange",
+          "synonyms": [
+            "blood oranges"
+          ]
+        },
+        {
+          "value": "Carrot",
+          "synonyms": [
+            "carrots"
+          ]
+        },
+        {
+          "value": "Cilantro",
+          "synonyms": [
+            "cilantros"
+          ]
+        },
+        {
+          "value": "Dragon fruit",
+          "synonyms": [
+            "dragon fruits"
+          ]
+        },
+        {
+          "value": "Durian",
+          "synonyms": [
+            "durians"
+          ]
+        },
+        {
+          "value": "Flour",
+          "synonyms": [
+            "flours"
+          ]
+        },
+        {
+          "value": "Lemon",
+          "synonyms": [
+            "lemons"
+          ]
+        },
+        {
+          "value": "Milk"
+        },
+        {
+          "value": "Orange",
+          "synonyms": [
+            "oranges"
+          ]
+        },
+        {
+          "value": "Papaya",
+          "synonyms": [
+            "papayas"
+          ]
+        },
+        {
+          "value": "Peach",
+          "synonyms": [
+            "peaches"
+          ]
+        },
+        {
+          "value": "Pineapple",
+          "synonyms": [
+            "pineapples"
+          ]
+        },
+        {
+          "value": "Pomegranate",
+          "synonyms": [
+            "Pomegranates"
+          ]
+        },
+        {
+          "value": "Purple Mushroom",
+          "synonyms": [
+            "mushroom",
+            "purple mushrooms"
+          ]
+        },
+        {
+          "value": "Rare Mushroom",
+          "synonyms": [
+            "rare mushrooms"
+          ]
+        },
+        {
+          "value": "Rosemary",
+          "synonyms": [
+            "rosemaries"
+          ]
+        },
+        {
+          "value": "Sugar"
+        }
+      ]      
     }
   },
   "alexa": {

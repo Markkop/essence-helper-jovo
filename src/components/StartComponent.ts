@@ -1,5 +1,6 @@
 import { Component, BaseComponent, Intents } from '@jovotech/framework'
 import { ChooseInformationOutput } from '../output/ChooseInformationOutput'
+import { GetDiscoverableLocationComponent } from './GetDiscoverableLocation'
 import { GetEquipmentPerkComponent } from './GetEquipmentPerkComponent'
 
 @Component()
@@ -14,6 +15,11 @@ export class StartComponent extends BaseComponent {
   @Intents(['GetEquipmentPerkIntent'])
   perk(): Promise<void> {
     return this.$redirect(GetEquipmentPerkComponent)
+  }
+
+  @Intents(['GetDiscoverableLocationIntent'])
+  discoverable(): Promise<void> {
+    return this.$redirect(GetDiscoverableLocationComponent)
   }
 
   UNHANDLED(): Promise<void> {
