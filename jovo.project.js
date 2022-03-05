@@ -1,6 +1,7 @@
 const { GoogleAssistantCli } = require('@jovotech/platform-googleassistant')
 const { AlexaCli } = require('@jovotech/platform-alexa')
 const { ProjectConfig } = require('@jovotech/cli-core')
+const { privacyAndCompliance, publishingInformation } = require('./alexa/manifest')
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,17 @@ const project = new ProjectConfig({
     new GoogleAssistantCli({
       projectId: 'essence-helper',
     }),
-    new AlexaCli({ locales: { en: ['en-AU', 'en-CA', 'en-IN', 'en-GB', 'en-US'] } }),
+    new AlexaCli({
+      locales: { en: ['en-AU', 'en-CA', 'en-IN', 'en-GB', 'en-US'] },
+      files: {
+        'skill-package/skill.json': {
+          manifest: {
+            publishingInformation,
+            privacyAndCompliance,
+          },
+        },
+      },
+    }),
   ],
 })
 
