@@ -1,0 +1,13 @@
+"service": "my-jovo-serverless-app"
+"frameworkVersion": "3.7.1"
+"package":
+  "artifact": "./bundle.zip"
+"provider":
+  "name": "aws"
+  "runtime": "nodejs14.x"
+"functions":
+  "handler":
+    "handler": "index.handler"
+"org": "markkop"
+"app": "my-jovo-serverless-app"
+"console": true

@@ -1,7 +1,8 @@
 const { GoogleAssistantCli } = require('@jovotech/platform-googleassistant')
 const { AlexaCli } = require('@jovotech/platform-alexa')
 const { ProjectConfig } = require('@jovotech/cli-core')
-const { privacyAndCompliance, publishingInformation } = require('./alexa/manifest')
+const { ServerlessCli } = require('@jovotech/target-serverless')
+const alexaSkillManifest = require('./build/prod/platform.alexa/skill-package/skill.json')
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,16 @@ const { privacyAndCompliance, publishingInformation } = require('./alexa/manifes
 |
 */
 const project = new ProjectConfig({
-  endpoint: '${JOVO_WEBHOOK_URL}',
+  defaultStage: 'dev',
+  stages: {
+    dev: {
+      endpoint: '${JOVO_WEBHOOK_URL}',
+    },
+    prod: {
+      endpoint: process.env.ENDPOINT_PROD,
+    },
+  },
   plugins: [
-    // Add Jovo CLI plugins here
     new GoogleAssistantCli({
       projectId: 'essence-helper',
     }),
@@ -25,6 +33,23 @@ const project = new ProjectConfig({
       files: {
         'skill-package/skill.json': alexaSkillManifest, // Run "jovo get:platform alexa" before building
       },
+    }),
+    new ServerlessCli({
+      org: 'markkop',
+      app: 'my-jovo-serverless-app',
+      console: true,
+      service: 'my-jovo-serverless-app',
+      frameworkVersion: '3.7.1',
+      package: {
+        artifact: './bundle.zip',
+      },
+      provider: {
+        name: 'aws',
+        runtime: 'nodejs14.x',
+      },
+      functions: {
+        handler: {
+          handler: 'index.handler',
         },
       },
     }),
