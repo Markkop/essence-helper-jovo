@@ -21,12 +21,10 @@ const project = new ProjectConfig({
     }),
     new AlexaCli({
       locales: { en: ['en-AU', 'en-CA', 'en-IN', 'en-GB', 'en-US'] },
+      skillId: process.env.SKILL_ID,
       files: {
-        'skill-package/skill.json': {
-          manifest: {
-            publishingInformation,
-            privacyAndCompliance,
-          },
+        'skill-package/skill.json': alexaSkillManifest, // Run "jovo get:platform alexa" before building
+      },
         },
       },
     }),

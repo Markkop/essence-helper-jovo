@@ -1,6 +1,123 @@
 {
-  "invocation": "essence helper",
   "version": "4.0",
+  "invocation": "essence helper",
+  "alexa": {
+    "interactionModel": {
+      "prompts": [
+        {
+          "id": "Elicit.Slot.1262922622006.814849628544",
+          "variations": [
+            {
+              "type": "PlainText",
+              "value": "Please, tell me the name of the equipment perk you are looking for."
+            }
+          ]
+        },
+        {
+          "id": "Slot.Validation.1262922622006.814849628544.145984369822",
+          "variations": [
+            {
+              "type": "PlainText",
+              "value": "Sorry, I couldn't find this perk. Please try again."
+            }
+          ]
+        },
+        {
+          "id": "Elicit.Slot.1221595587524.92095284155",
+          "variations": [
+            {
+              "type": "PlainText",
+              "value": "Please, tell me which item you would like the location. For now I only know about cooking ingredients."
+            }
+          ]
+        },
+        {
+          "id": "Slot.Validation.1161537021745.378159414893.739760953093",
+          "variations": [
+            {
+              "type": "PlainText",
+              "value": "Sorry, I didn't understand or I don't know the location for this item. Please try again."
+            }
+          ]
+        }
+      ],
+      "dialog": {
+        "intents": [
+          {
+            "name": "GetEquipmentPerkIntent",
+            "confirmationRequired": false,
+            "prompts": {},
+            "slots": [
+              {
+                "name": "perk",
+                "type": "perk",
+                "elicitationRequired": true,
+                "confirmationRequired": false,
+                "prompts": {
+                  "elicitation": "Elicit.Slot.1262922622006.814849628544"
+                },
+                "validations": [
+                  {
+                    "type": "hasEntityResolutionMatch",
+                    "prompt": "Slot.Validation.1262922622006.814849628544.145984369822"
+                  }
+                ]
+              }
+            ],
+            "delegationStrategy": "ALWAYS"
+          },
+          {
+            "name": "GetDiscoverableLocationIntent",
+            "confirmationRequired": false,
+            "prompts": {},
+            "slots": [
+              {
+                "name": "discoverable",
+                "type": "discoverable",
+                "elicitationRequired": true,
+                "confirmationRequired": false,
+                "prompts": {
+                  "elicitation": "Elicit.Slot.1221595587524.92095284155"
+                },
+                "validations": [
+                  {
+                    "type": "hasEntityResolutionMatch",
+                    "prompt": "Slot.Validation.1161537021745.378159414893.739760953093"
+                  }
+                ]
+              }
+            ],
+            "delegationStrategy": "ALWAYS"
+          }
+        ],
+        "delegationStrategy": "ALWAYS"
+      },
+      "languageModel": {
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.NavigateHomeIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.FallbackIntent",
+            "samples": []
+          }
+        ]
+      }
+    }
+  },
   "intents": {
     "GetEquipmentPerkIntent": {
       "phrases": [
@@ -645,27 +762,7 @@
         {
           "value": "Sugar"
         }
-      ]      
-    }
-  },
-  "alexa": {
-    "interactionModel": {
-      "languageModel": {
-        "intents": [
-          {
-            "name": "AMAZON.CancelIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.HelpIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.StopIntent",
-            "samples": []
-          }
-        ]
-      }
+      ]
     }
   }
 }
