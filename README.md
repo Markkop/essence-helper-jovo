@@ -29,13 +29,21 @@ This project is made using Jovo as an effort to avoid duplicate logic and code.
 
 ### Unit Testing
 
-To run unit tests simply run `npm run test`
+To run unit tests for the jovo app itself simply run `npm run test`
 
 ### Alexa Dialog Replays
 
 To simulate requests directly to the Alexa Skill, run `npm run test:dialog`.  
 This will run `ask dialog -r replay_file.json` for each dialog replay file inside `test/alexa/dialog-replays`.
 Make sure to deploy the `dev` or `prod` endpoint according to the testing you want to make.
+
+For replaying a single file, run `./scripts/alexa-dialogs.sh -f perk`, for example.
+
+### Google Assistant Testing
+
+To simulate requests to the Google Action, first setup a service account by following [these instructions](https://github.com/actions-on-google/actions-builder-conversation-components-nodejs/blob/master/README.md#running-tests).
+Then run `npm run enable-activity-controls` only once.
+Finally you can run `npm run test:google`
 
 ## Deploy
 
