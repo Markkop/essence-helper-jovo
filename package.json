@@ -6,7 +6,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "jest test/app.test.ts",
+    "test": "jest test/app/app.test.ts",
     "tsc": "tsc",
     "start:dev": "tsc-watch --onSuccess \"node ./dist/app.dev.js --jovo-webhook\" --noClear",
     "start:prod": "tsc-watch --onSuccess \"ts-node src/app.prod.ts\" --noClear",
