@@ -1,5 +1,6 @@
 import { Component, BaseComponent, Intents } from '@jovotech/framework'
 import { ChooseInformationOutput } from '../output/ChooseInformationOutput'
+import { FallbackWithHelpOutput } from '../output/FallbackWithHelp'
 import { Strings } from '../utilities/strings'
 import { GetDiscoverableLocationComponent } from './GetDiscoverableLocation'
 import { GetEquipmentPerkComponent } from './GetEquipmentPerkComponent'
@@ -33,6 +34,6 @@ export class StartComponent extends BaseComponent {
       return this.$redirect(GetDiscoverableLocationComponent)
     }
 
-    return this.START()
+    return this.$send(FallbackWithHelpOutput)
   }
 }

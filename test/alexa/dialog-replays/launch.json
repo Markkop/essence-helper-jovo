@@ -5,9 +5,11 @@
   "userInput": [
     "open essence helper",
     "perk shell",
-    "exit",
     "open essence helper",
     "ingredient apples",
+    "open essence helper",
+    "take me to the moon",
+    "exit",
     ".quit"
   ]
 }

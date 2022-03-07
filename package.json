@@ -30,7 +30,7 @@
     "build-and-deploy:google:dev": "npm run build:google:dev && npm run deploy:google:dev",
     "test:alexa": "./scripts/alexa-dialogs.sh",
     "enable-activity-controls": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json web-and-app-activity-controls",
-    "test:google": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json jest test/google/google.test.ts",
+    "test:google": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json jest test/google/google.test.ts --silent",
     "deploy:code": "jovo deploy:code serverless --stage prod"
   },
   "dependencies": {

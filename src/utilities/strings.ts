@@ -3,6 +3,7 @@ export enum Strings {
   HELP = 'HELP',
   ERROR = 'ERROR',
   FALLBACK = 'FALLBACK',
+  FALLBACK_WITH_HELP = 'FALLBACK_WITH_HELP',
   ABOUT = 'ABOUT',
   UNAVAILABLE_INTENT = 'UNAVAILABLE_INTENT',
   SKILL_NAME = 'SKILL_NAME',
@@ -30,6 +31,7 @@ interface IStrings {
   [Strings.SKILL_NAME]: string
   [Strings.HELP]: string
   [Strings.FALLBACK]: string
+  [Strings.FALLBACK_WITH_HELP]: string
   [Strings.ERROR]: string
 }
 
@@ -49,6 +51,8 @@ export const en = {
     SKILL_NAME: 'Essence Helper',
     HELP: 'I can get you the effects of an equipment perk or the location of a cooking ingredient.',
     FALLBACK: "Sorry, I don't know that. Try again.",
+    FALLBACK_WITH_HELP:
+      "Sorry, I didn't understand. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?",
     ERROR: "Sorry, I didn't understand. Try again.",
   } as IStrings,
 }

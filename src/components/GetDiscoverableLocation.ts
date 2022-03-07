@@ -48,6 +48,12 @@ export class GetDiscoverableLocationComponent extends BaseComponent {
   }
 
   UNHANDLED(): Promise<void> {
+    if (this.$googleAssistant?.$request?.intent?.name.includes('actions.intent.NO_MATCH')) {
+      return this.$send({
+        message: this.$t(Strings.DISCOVERABLE_NOT_FOUND),
+        listen: true,
+      })
+    }
     return this.START()
   }
 }
