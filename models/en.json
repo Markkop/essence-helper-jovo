@@ -649,89 +649,89 @@
         {
           "value": "Apple",
           "synonyms": [
-            "apples"
+            "Apples"
           ]
         },
         {
           "value": "Basic Noodles",
           "synonyms": [
-            "basic noodle",
-            "noodle"
+            "Basic",
+            "Noodles",
+            "Basic Noodles"
           ]
         },
         {
           "value": "Basil",
           "synonyms": [
-            "basils"
+            "Basils"
           ]
         },
         {
           "value": "Blood Orange",
           "synonyms": [
-            "blood oranges"
+            "Blood",
+            "Orange",
+            "Blood Oranges"
           ]
         },
         {
           "value": "Carrot",
           "synonyms": [
-            "carrots"
+            "Carrots"
           ]
         },
         {
           "value": "Cilantro",
           "synonyms": [
-            "cilantros"
+            "Cilantros"
           ]
         },
         {
-          "value": "Dragon fruit",
+          "value": "Dragonfruit",
           "synonyms": [
-            "dragon fruits"
+            "Dragonfruits"
           ]
         },
         {
           "value": "Durian",
           "synonyms": [
-            "durians"
+            "Durians"
           ]
         },
         {
           "value": "Flour",
           "synonyms": [
-            "flours"
+            "Flours"
           ]
         },
         {
           "value": "Lemon",
           "synonyms": [
-            "lemons"
+            "Lemons"
           ]
         },
         {
-          "value": "Milk"
-        },
-        {
-          "value": "Orange",
+          "value": "Milk",
           "synonyms": [
-            "oranges"
+            "Milks"
           ]
         },
         {
           "value": "Papaya",
           "synonyms": [
-            "papayas"
+            "Papayas"
           ]
         },
         {
           "value": "Peach",
           "synonyms": [
-            "peaches"
+            "Peaches"
           ]
         },
         {
           "value": "Pineapple",
           "synonyms": [
-            "pineapples"
+            "Pineapples"
           ]
         },
         {
@@ -743,24 +743,28 @@
         {
           "value": "Purple Mushroom",
           "synonyms": [
-            "mushroom",
-            "purple mushrooms"
+            "Purple",
+            "Purple Mushrooms"
           ]
         },
         {
           "value": "Rare Mushroom",
           "synonyms": [
-            "rare mushrooms"
+            "Rare",
+            "Rare Mushrooms"
           ]
         },
         {
           "value": "Rosemary",
           "synonyms": [
-            "rosemaries"
+            "Rosemaries"
           ]
         },
         {
-          "value": "Sugar"
+          "value": "Sugar",
+          "synonyms": [
+            "Sugars"
+          ]
         }
       ]
     }
