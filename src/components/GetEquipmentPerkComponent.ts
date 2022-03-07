@@ -1,6 +1,6 @@
 import { Component, BaseComponent } from '@jovotech/framework'
 import { CardOutput } from '../output/CardOutput'
-import { getIndefiniteArticleForPerkType, getPerk } from '../utilities/perk'
+import { getIndefiniteArticleForPerkType, getPerk, parsePerkEffect } from '../utilities/perk'
 import { Strings } from '../utilities/strings'
 
 @Component()
@@ -42,7 +42,7 @@ export class GetEquipmentPerkComponent extends BaseComponent {
     }
 
     const indefiniteArticle = getIndefiniteArticleForPerkType(perk.type)
-    const perkEffect = perk.effect.replace('by', '')
+    const perkEffect = parsePerkEffect(perk.effect)
     const perkType = perk.type
     const accordingToSource = this.$t(Strings.ACCORDING_TO_SOURCE, { source: 'ZenithMMO Fandom Wiki' })
     const effectSpeakOutput = this.$t(Strings.PERK, { indefiniteArticle, perkName, perkType, perkEffect })
