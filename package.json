@@ -28,7 +28,9 @@
     "deploy:google:prod": "jovo deploy:platform googleAssistant --stage prod",
     "get-and-build:alexa:dev": "npm run get:alexa:dev && npm run build:alexa:dev",
     "build-and-deploy:google:dev": "npm run build:google:dev && npm run deploy:google:dev",
-    "test:dialog": "./scripts/alexa-dialogs.sh",
+    "test:alexa": "./scripts/alexa-dialogs.sh",
+    "enable-activity-controls": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json web-and-app-activity-controls",
+    "test:google": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json jest test/google/google.test.ts",
     "deploy:code": "jovo deploy:code serverless --stage prod"
   },
   "dependencies": {
@@ -38,11 +40,12 @@
     "@jovotech/platform-googleassistant": "^4.2.3",
     "@jovotech/plugin-debugger": "^4.0.0",
     "@jovotech/server-express": "^4.0.0",
+    "@jovotech/server-lambda": "4.2.3",
     "@jovotech/target-serverless": "^4.1.3",
-    "source-map-support": "^0.5.19",
-    "@jovotech/server-lambda": "4.2.3"
+    "source-map-support": "^0.5.19"
   },
   "devDependencies": {
+    "@assistant/conversation-testing": "^1.0.0",
     "@jovotech/cli-command-build": "^4.1.3",
     "@jovotech/cli-command-deploy": "^4.1.3",
     "@jovotech/cli-command-get": "^4.1.3",

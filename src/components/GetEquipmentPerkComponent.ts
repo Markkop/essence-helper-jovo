@@ -6,10 +6,10 @@ import { Strings } from '../utilities/strings'
 @Component()
 export class GetEquipmentPerkComponent extends BaseComponent {
   START(): Promise<void> {
-    return this.perk()
+    return this.askForPerk()
   }
 
-  perk() {
+  askForPerk() {
     const providedPerk = this.$entities.perk
     if (!providedPerk) {
       return this.$send({
@@ -18,6 +18,10 @@ export class GetEquipmentPerkComponent extends BaseComponent {
       })
     }
 
+    return this.perk()
+  }
+
+  perk() {
     const providedPerkName = this.$entities.perk!.resolved!
     const perk = getPerk(providedPerkName)
     if (!perk) {
@@ -50,6 +54,13 @@ export class GetEquipmentPerkComponent extends BaseComponent {
   }
 
   UNHANDLED(): Promise<void> {
+    if (this.$googleAssistant?.$request?.intent?.name.includes('actions.intent.NO_MATCH')) {
+      return this.$send({
+        message: this.$t(Strings.PERK_NOT_FOUND),
+        listen: true,
+      })
+    }
+
     return this.START()
   }
 }
