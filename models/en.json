@@ -395,14 +395,6 @@
           ]
         },
         {
-          "value": "Banshee's Bellow",
-          "synonyms": [
-            "Banshee",
-            "Banshee Bellow",
-            "Bellow"
-          ]
-        },
-        {
           "value": "Body Meld",
           "synonyms": [
             "Body"
@@ -429,14 +421,6 @@
           "synonyms": [
             "Chrono",
             "Skip"
-          ]
-        },
-        {
-          "value": "Death's Chariot",
-          "synonyms": [
-            "Death",
-            "Death Chariot",
-            "Chariot"
           ]
         },
         {
@@ -468,20 +452,6 @@
           ]
         },
         {
-          "value": "Godking's Ascension",
-          "synonyms": [
-            "Godking Ascension",
-            "Ascension"
-          ]
-        },
-        {
-          "value": "Godking's Passion",
-          "synonyms": [
-            "Godking Passion",
-            "Passion"
-          ]
-        },
-        {
           "value": "Helping Hand",
           "synonyms": [
             "Helping",
@@ -493,14 +463,6 @@
           "synonyms": [
             "Inner",
             "Rage"
-          ]
-        },
-        {
-          "value": "Killer's Edge",
-          "synonyms": [
-            "Killer",
-            "Killer Edge",
-            "Edge"
           ]
         },
         {
@@ -641,6 +603,44 @@
         },
         {
           "value": "Fortified"
+        },
+        {
+          "value": "Banshee's Bellow",
+          "synonyms": [
+            "Banshee",
+            "Banshee Bellow",
+            "Bellow"
+          ]
+        },
+        {
+          "value": "Death's Chariot",
+          "synonyms": [
+            "Death",
+            "Death Chariot",
+            "Chariot"
+          ]
+        },
+        {
+          "value": "Godking's Ascension",
+          "synonyms": [
+            "Godking Ascension",
+            "Ascension"
+          ]
+        },
+        {
+          "value": "Godking's Passion",
+          "synonyms": [
+            "Godking Passion",
+            "Passion"
+          ]
+        },
+        {
+          "value": "Killer's Edge",
+          "synonyms": [
+            "Killer",
+            "Killer Edge",
+            "Edge"
+          ]
         }
       ]
     },
