@@ -6,7 +6,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest test/app.test.ts",
     "tsc": "tsc",
     "start:dev": "tsc-watch --onSuccess \"node ./dist/app.dev.js --jovo-webhook\" --noClear",
     "start:prod": "tsc-watch --onSuccess \"ts-node src/app.prod.ts\" --noClear",
@@ -14,8 +14,22 @@
     "prebundle": "rimraf bundle",
     "postbundle": "cd bundle && bestzip ../bundle.zip * && cd ..",
     "bundle:dev": "npm run bundle -- src/app.dev.ts",
+    "bundle:prod": "npm run bundle -- src/app.prod.ts",
     "eslint": "eslint src test --fix --ext .ts,.ts",
-    "bundle:prod": "npm run bundle -- src/app.prod.ts"
+    "get:alexa:dev": "jovo get:platform alexa --clean --stage dev",
+    "get:alexa:prod": "jovo get:platform alexa --clean --stage prod",
+    "build:alexa:dev": "jovo build:platform alexa --stage dev",
+    "build:alexa:prod": "jovo build:platform alexa --stage prod",
+    "deploy:alexa:dev": "npm run get:alexa:prod && npm run build:alexa:prod && jovo deploy:platform alexa --stage dev",
+    "deploy:alexa:prod": "npm run get:alexa:prod && npm run build:alexa:prod && jovo deploy:platform alexa --stage prod",
+    "build:google:dev": "jovo build:platform googleAssistant --stage dev",
+    "build:google:prod": "jovo build:platform googleAssistant --stage prod",
+    "deploy:google:dev": "jovo deploy:platform googleAssistant --stage dev",
+    "deploy:google:prod": "jovo deploy:platform googleAssistant --stage prod",
+    "get-and-build:alexa:dev": "npm run get:alexa:dev && npm run build:alexa:dev",
+    "build-and-deploy:google:dev": "npm run build:google:dev && npm run deploy:google:dev",
+    "test:dialog": "./scripts/alexa-dialogs.sh",
+    "deploy:code": "jovo deploy:code serverless --stage prod"
   },
   "dependencies": {
     "@jovotech/db-filedb": "^4.0.0",

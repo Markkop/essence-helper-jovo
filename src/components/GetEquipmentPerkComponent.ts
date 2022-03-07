@@ -6,6 +6,10 @@ import { Strings } from '../utilities/strings'
 @Component()
 export class GetEquipmentPerkComponent extends BaseComponent {
   START(): Promise<void> {
+    return this.perk()
+  }
+
+  perk() {
     const providedPerk = this.$entities.perk
     if (!providedPerk) {
       return this.$send({

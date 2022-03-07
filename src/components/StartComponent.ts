@@ -1,5 +1,6 @@
 import { Component, BaseComponent, Intents } from '@jovotech/framework'
 import { ChooseInformationOutput } from '../output/ChooseInformationOutput'
+import { Strings } from '../utilities/strings'
 import { GetDiscoverableLocationComponent } from './GetDiscoverableLocation'
 import { GetEquipmentPerkComponent } from './GetEquipmentPerkComponent'
 
@@ -7,8 +8,7 @@ import { GetEquipmentPerkComponent } from './GetEquipmentPerkComponent'
 export class StartComponent extends BaseComponent {
   START(): Promise<void> {
     return this.$send(ChooseInformationOutput, {
-      message:
-        'Hello Zenithian. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?',
+      message: this.$t(Strings.LAUNCH),
     })
   }
 
@@ -23,6 +23,16 @@ export class StartComponent extends BaseComponent {
   }
 
   UNHANDLED(): Promise<void> {
+    // TO DO: Figure out how to use Get...Intent with direct slot filling in this Start component
+    // without the need of doing it in this UNHANDLED method
+    if (this.$entities.perk) {
+      return this.$redirect(GetEquipmentPerkComponent)
+    }
+
+    if (this.$entities.discoverable) {
+      return this.$redirect(GetDiscoverableLocationComponent)
+    }
+
     return this.START()
   }
 }

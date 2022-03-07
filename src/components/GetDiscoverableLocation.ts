@@ -6,6 +6,10 @@ import { Strings } from '../utilities/strings'
 @Component()
 export class GetDiscoverableLocationComponent extends BaseComponent {
   START(): Promise<void> {
+    return this.discoverable()
+  }
+
+  discoverable() {
     const providedDiscoverable = this.$entities.discoverable
     if (!providedDiscoverable) {
       return this.$send({

@@ -389,17 +389,17 @@
     "perk": {
       "values": [
         {
+          "value": "Blood Thief",
+          "synonyms": [
+            "Blood"
+          ]
+        },
+        {
           "value": "Banshee's Bellow",
           "synonyms": [
             "Banshee",
             "Banshee Bellow",
             "Bellow"
-          ]
-        },
-        {
-          "value": "Blood Thief",
-          "synonyms": [
-            "Blood"
           ]
         },
         {

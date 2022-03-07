@@ -1,4 +1,6 @@
-import { Component, BaseComponent, Global } from '@jovotech/framework'
+import { Component, BaseComponent, Global, Intents } from '@jovotech/framework'
+import { GetDiscoverableLocationComponent } from './GetDiscoverableLocation'
+import { GetEquipmentPerkComponent } from './GetEquipmentPerkComponent'
 import { StartComponent } from './StartComponent'
 
 /*
@@ -15,5 +17,15 @@ import { StartComponent } from './StartComponent'
 export class GlobalComponent extends BaseComponent {
   LAUNCH(): Promise<void> {
     return this.$redirect(StartComponent)
+  }
+
+  @Intents(['GetEquipmentPerkIntent'])
+  perk(): Promise<void> {
+    return this.$redirect(GetEquipmentPerkComponent)
+  }
+
+  @Intents(['GetDiscoverableLocationIntent'])
+  discoverable(): Promise<void> {
+    return this.$redirect(GetDiscoverableLocationComponent)
   }
 }

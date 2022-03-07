@@ -1,0 +1,13 @@
+{
+  "skillId":"amzn1.ask.skill.db94a83e-4fe1-4dcc-87ae-afb9535d8e6e",
+  "locale": "en-US",
+  "type": "text",
+  "userInput": [
+    "open essence helper and get me the location of orange", 
+    "open essence helper and give me the location of flour", 
+    "open essence helper and provide me the location of apple", 
+    "open essence helper and tell where oranges are located", 
+    "open essence helper and get the location for the ingredient lemon", 
+    ".quit"
+  ]
+}

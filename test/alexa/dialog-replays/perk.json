@@ -1,0 +1,14 @@
+{
+  "skillId":"amzn1.ask.skill.db94a83e-4fe1-4dcc-87ae-afb9535d8e6e",
+  "locale": "en-US",
+  "type": "text",
+  "userInput": [
+    "open essence helper and tell me the effect of the perk shell", 
+    "open essence helper and give me the effect of the banshee's bellow", 
+    "open essence helper and provide me the effect of blood thief perk", 
+    "open essence helper and tell the perk body meld", 
+    "open essence helper and get the effect for the perk brain freeze", 
+    "open essence helper and get the equipment perk bunker", 
+    ".quit"
+  ]
+}
