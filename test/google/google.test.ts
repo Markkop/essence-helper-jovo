@@ -7,7 +7,6 @@ import { testStart } from './start'
 
 describe('Essence Helper Test Suite', function () {
   jest.setTimeout(60000)
-  jest.spyOn(global.console, 'info')
   const { projectId, triggerPhrase } = loadProjectSettings()
   const test = new ActionsOnGoogleTestManager({ projectId })
 
