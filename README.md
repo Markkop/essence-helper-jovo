@@ -7,8 +7,13 @@
 Essence Helper is a voice app compatible with Google Assistant and Amazon Alexa that retrieves information about ZenithVR MMORPG.
 
 This project is made using [Jovo Framework](https://www.jovo.tech) with the goal to avoid duplicate logic and code while developing the skill for Alexa and Google Assistant.  
-Previous Alexa Skill repository: https://github.com/Markkop/essence-helper-alexa-skill
-Previous Google Action repository: https://github.com/Markkop/essence-helper-google-action
+
+Before discovering this framework, I've developed the same skill for both platforms using their own SDKs:
+
+Previous Alexa Skill repository:  
+https://github.com/Markkop/essence-helper-alexa-skill  
+Previous Google Action repository:  
+https://github.com/Markkop/essence-helper-google-action
 
 ## Get the skill
 
