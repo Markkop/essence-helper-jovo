@@ -31,7 +31,8 @@
     "deploy:code": "jovo deploy:code serverless --stage prod",
     "test:alexa": "./scripts/alexa-dialogs.sh",
     "enable-activity-controls": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json web-and-app-activity-controls",
-    "test:google": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json jest test/google/google.test.ts --silent"
+    "test:google": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json jest test/google/google.test.ts",
+    "test:google:norewrite": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json NO_DRAFT_REWRITE=true jest test/google/google.test.ts"
   },
   "dependencies": {
     "@jovotech/db-filedb": "^4.0.0",

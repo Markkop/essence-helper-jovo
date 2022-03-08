@@ -68,6 +68,9 @@ For replaying a single file, run `./scripts/alexa-dialogs.sh -f <filename>` as i
 To simulate requests to the Google Action, first setup a service account by following [these instructions](https://github.com/actions-on-google/actions-builder-conversation-components-nodejs/blob/master/README.md#running-tests).  
 Then run `npm run enable-activity-controls` only once.  
 Finally you can run `npm run test:google`
+To able to run the latest draft version, the test rewrites the app preview everytime you run the test suite.  
+If you want to keep running tests without changes in the action model and settings, you may skip this rewriting.  
+Run `npm run test:google:norewrite` in this case.  
 
 ## Deploy
 

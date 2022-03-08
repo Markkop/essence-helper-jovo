@@ -33,7 +33,9 @@ export function loadProjectSettings(): Record<string, string> {
 }
 
 export async function beforeAllActionsOnGoogleTests(test: ActionsOnGoogleTestManager) {
-  await test.writePreviewFromDraft()
+  if (!process.env.NO_DRAFT_REWRITE) {
+    await test.writePreviewFromDraft()
+  }
   test.setSuiteLocale(DEFAULT_LOCALE)
   test.setSuiteSurface(DEFAULT_SURFACE)
 }
