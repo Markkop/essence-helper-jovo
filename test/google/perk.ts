@@ -5,7 +5,7 @@ import { en } from '../../src/utilities/strings'
 const intentTrigger = 'Equipment Perk'
 
 export function testPerk(test: ActionsOnGoogleTestManager, triggerPhrase: string) {
-  it('retrieves perk effect by triggering intent from Start scene', async function () {
+  it('retrieves shell perk effect by triggering intent from Start scene', async function () {
     await startConversation(test, triggerPhrase)
     await test.sendQuery(intentTrigger)
     test.assertSpeech(en.translation.ASK_FOR_PERK)
@@ -14,14 +14,14 @@ export function testPerk(test: ActionsOnGoogleTestManager, triggerPhrase: string
     test.assertConversationEnded()
   })
 
-  it('retrieves perk effect from global intent', async function () {
+  it('retrieves shell perk effect from global intent', async function () {
     await startConversation(test, triggerPhrase)
     await test.sendQuery('shell')
     test.assertText('shell|Shell', { isRegexp: true })
     test.assertConversationEnded()
   })
 
-  it('retrieves perk effect from Start scene after slot input retry', async function () {
+  it('retrieves shell perk effect from Start scene after slot input retry', async function () {
     await startConversation(test, triggerPhrase)
     await test.sendQuery(intentTrigger)
     test.assertSpeech(en.translation.ASK_FOR_PERK)
@@ -41,6 +41,15 @@ export function testPerk(test: ActionsOnGoogleTestManager, triggerPhrase: string
     await test.sendQuery('asdasdasd')
     test.assertSpeech(en.translation.PERK_NOT_FOUND)
     await test.sendQuery('asdasdasd')
+    test.assertConversationEnded()
+  })
+
+  it('retrieves an effect with parsed effect', async function () {
+    await startConversation(test, triggerPhrase)
+    await test.sendQuery(intentTrigger)
+    test.assertSpeech(en.translation.ASK_FOR_PERK)
+    await test.sendQuery('god king passion')
+    test.assertText('30 seconds', { isRegexp: true })
     test.assertConversationEnded()
   })
 }
