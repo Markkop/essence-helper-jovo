@@ -1,4 +1,4 @@
-# 🥽 Essence Helper
+# 🎙️ Essence Helper
 
 [![https://img.shields.io/static/v1?label=made%20with&message=jovo&color=272f48&logo=data:https://www.jovo.tech/favicon.ico](https://img.shields.io/static/v1?label=made%20with&message=jovo&color=272f48)](https://www.jovo.tech)
 [![https://img.shields.io/static/v1?label=google%20assistant&message=compatible&logo=googleassistant&color=brightgreen](https://img.shields.io/static/v1?label=google%20assistant&message=compatible&logo=googleassistant&color=brightgreen)](https://assistant.google.com/services/a/uid/0000005dbaeb2c8d?hl=en-US)
