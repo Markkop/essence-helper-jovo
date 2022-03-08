@@ -1,7 +1,6 @@
 import perks from '../data/perks.json'
 
 export type Perk = {
-  id: string
   name: string
   effect?: string
   type: string
